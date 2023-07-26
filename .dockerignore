@@ -1,0 +1,10 @@
+*.log
+*.py[cod]
+__pycache__/
+mysql/
+nginx/
+nginx_docker/
+web_logs/
+# migration files
+alembic/
+alembic.ini

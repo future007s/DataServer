@@ -1,0 +1,41 @@
+{
+  "user_info": {
+    "username": "15553923890",
+    "password": "123456"},
+  "default_time": "2023-07-10 00:00:00",
+  "max_workers": 2,
+  "skip_time":5,
+  "get_url": "http://192.168.10.66:8003/DataSend",
+  "login_url": "http://192.168.10.31:8083/DataServerLogin",
+  "data_transfer_time": "data_transfer_time",
+  "building_info_list": [{
+    "building_id": "3701022002",
+    "building_code": "12-10261755360194561",
+    "sign_list": [],
+    "func_list": []
+  }
+  ],
+  "get_config": {
+    "frequency": "5",
+    "value_type": "0",
+    "data_type": "1",
+    "table_name_save": "yyq123",
+    "table_name_get": ""},
+  "flag": 0,
+  "database_info": {
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "123456",
+  "database": "test"
+  },
+  "use_local": 0,
+  "local_database":{
+  "host": "192.168.10.232",
+  "port": 3306,
+  "username": "bnse",
+  "password": "123456",
+  "database": "bnse_original"
+  },
+  "wait_time":3
+}

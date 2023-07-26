@@ -1,0 +1,26 @@
+{
+  "user_info": {
+    "username": "18922772797",
+    "password": "123456"
+  },
+  "default_time": "2022-01-01 00:00:00",
+  "max_workers": 10,
+  "send_url": "http://192.168.10.31:8083/DataReceive",
+  "login_url": "http://192.168.10.31:8083/DataServerLogin",
+  "send_config": [
+    {
+      "building_id": "3701022001",
+      "building_code": "12-10261755360194560",
+      "frequency": "4",
+      "value_type": "2",
+      "data_type": "2",
+      "database_info": {
+        "host": "192.168.10.38",
+        "port": 3316,
+        "username": "bnse",
+        "password": "Bnse225788",
+        "database": "11-11640543134060544_meter"
+      }
+    }
+  ]
+}

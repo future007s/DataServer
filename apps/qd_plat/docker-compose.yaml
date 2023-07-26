@@ -1,0 +1,29 @@
+#volumes:
+#  function_redis_vol: # 定义数据卷同步redis容器内数据
+services:
+  send_data:
+    build: .
+    # command: gunicorn app:app -w 3 -k uvicorn.workers.UvicornWorker -b 127.0.0.1:8001
+    command: python send_data.py > logs/main.log 2>&1
+    tty: true
+#    links:
+#      - server_redis
+    volumes:
+      - ./web_logs:/qd_plat/logs
+      - /usr/bin/docker:/usr/bin/docker
+      - /run/docker.sock:/run/docker.sock
+    #   - .:/app
+#    ports:
+#      - '9001:9001'
+    restart: always
+
+#  server_redis:
+#    image: redis:5
+#    command: redis-server /etc/redis/redis.conf # 容器启动后启动redis服务器
+#    volumes:
+#      - function_redis_vol:/data # 通过挂载给redis数据备份
+#      - ./redis/redis.conf:/etc/redis/redis.conf # 挂载redis配置文件
+#    ports:
+#      - "63079:63079"
+#    restart: always # always表容器运行发生错误时一直重启
+

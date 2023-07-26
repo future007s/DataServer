@@ -1,0 +1,17 @@
+{
+  "config_database": {
+    "username": "bnse",
+    "password": "Bnse225788",
+    "host": "192.168.10.70",
+    "port": "4000",
+    "database": "bnse_config"
+  },
+  "store_database": {
+    "username": "bnse",
+    "password": "Bnse225788",
+    "host": "192.168.10.70",
+    "port": "4000",
+    "database": "IBMS_data"
+  },
+  "start_time": "2020-01-01 00:00:00"
+}
